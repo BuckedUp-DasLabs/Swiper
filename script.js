@@ -1,7 +1,7 @@
 const createSwiper = (obj) => {
   const images = [];
   obj.imagesIds.forEach((id) => {
-    images.push(document.querySelector(`#${id} img`));
+    images.push(document.querySelector(`#${id}`));
     document.getElementById(id).remove();
   });
   const container = document.getElementById(obj.containerID);
