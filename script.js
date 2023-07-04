@@ -12,11 +12,11 @@ const createSwiper = (obj) => {
 
   const nextButton = document.getElementById(obj.nextButtonId);
   const prevButton = document.getElementById(obj.prevButtonId);
-  nextButton.classList.add(`swiper-next`);
-  nextButton.classList.add(`${obj.swiperName}-next`);
-  prevButton.classList.add(`swiper-prev`);
-  prevButton.classList.add(`${obj.swiperName}-prev`);
-  if(obj.isBanner){
+  nextButton?.classList.add(`swiper-next`);
+  nextButton?.classList.add(`${obj.swiperName}-next`);
+  prevButton?.classList.add(`swiper-prev`);
+  prevButton?.classList.add(`${obj.swiperName}-prev`);
+  if(obj.isBanner && nextButton && prevButton){
     container.appendChild(prevButton);
     container.appendChild(nextButton);
   }
