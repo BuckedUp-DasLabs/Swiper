@@ -20,6 +20,12 @@ const createSwiper = (obj) => {
     container.appendChild(prevButton);
     container.appendChild(nextButton);
   }
+
+  const pagination = document.getElementById(obj.pagination);
+  if(pagination)
+    pagination.innerHTML = "";
+  pagination?.classList.add("swiper-pagination")
+  pagination?.classList.add(`${obj.swiperName}-pagination`)
   
   const swiperWrapper = document.createElement("div");
   swiperWrapper.classList.add("swiper-wrapper");
@@ -44,5 +50,9 @@ const createSwiper = (obj) => {
       nextEl: `.${obj.swiperName}-next`,
       prevEl: `.${obj.swiperName}-prev`,
     },
+    pagination: {
+      el: `.${obj.swiperName}-pagination`,
+      type: 'bullets',
+    }
   });
 };

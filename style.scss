@@ -21,5 +21,10 @@
       left: 1.3rem !important;
       right: unset !important;
     }
+    &-pagination-bullet{
+      background-color: white;
+      width: 0.6rem;
+      height: 0.6rem;
+    }
   }
 }

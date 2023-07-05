@@ -16,18 +16,19 @@
 ```
 <script>
   createSwiper({
-  nextButtonId: "element-47",
-  prevButtonId: "element-45",
-  containerID: "element-44",
-  imagesIds: ["element-48", "element-49"],
-  swiperName: "test1",
-  isBanner: true,
+  nextButtonId: "element-",
+  prevButtonId: "element-",
+  containerID: "element-",
+  imagesIds: ["element-", "element-"],
+  swiperName: "",
+  isBanner: false,
   slidesPerView: 1,
   autoplay: { delay: 4000, disableOnInteraction: false },
   speed: 500,
   loop: true,
   spaceBetween: 0,
-  centeredSlides: false
+  centeredSlides: false,
+  pagination: "element-",
 });
 </script>
 ```
