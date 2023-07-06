@@ -40,8 +40,10 @@ const createSwiper = (obj) => {
   });
 
   return new Swiper(`.swiper.${obj.swiperName}`, {
-    slidesPerView: obj.slidesPerView,
+    slidesPerView: obj.slidesPerViewMobile,
+    slidesPerGroup: obj.slidesPerGroupMobile,
     loop: obj.loop,
+    rewind: obj.rewind,
     autoplay: obj.autoplay,
     speed: obj.speed,
     spaceBetween: obj.spaceBetween,
@@ -53,6 +55,12 @@ const createSwiper = (obj) => {
     pagination: {
       el: `.${obj.swiperName}-pagination`,
       type: 'bullets',
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: obj.slidesPerView,
+        slidesPerGroup: obj.slidesPerGroup
+      }
     }
   });
 };

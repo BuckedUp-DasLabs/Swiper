@@ -16,19 +16,23 @@
 ```
 <script>
   createSwiper({
-  nextButtonId: "element-",
-  prevButtonId: "element-",
-  containerID: "element-",
-  imagesIds: ["element-", "element-"],
-  swiperName: "",
-  isBanner: false,
-  slidesPerView: 1,
-  autoplay: { delay: 4000, disableOnInteraction: false },
-  speed: 500,
-  loop: true,
-  spaceBetween: 0,
-  centeredSlides: false,
-  pagination: "element-",
-});
+    nextButtonId: "element-",
+    prevButtonId: "element-",
+    containerID: "element-",
+    imagesIds: ["element-", "element-"],
+    swiperName: "",
+    isBanner: false,
+    slidesPerView: 1,
+    slidesPerViewMobile: 1,
+    slidesPerGroup: 1,
+    slidesPerGroupMobile: 1,
+    autoplay: { delay: 4000, disableOnInteraction: true },
+    speed: 500,
+    loop: true,
+    rewind: false,
+    spaceBetween: 0,
+    centeredSlides: false,
+    pagination: "element-",
+  });
 </script>
 ```

@@ -27,8 +27,13 @@
   }
 }
 
-.swiper-pagination-bullet{
+.swiper {
+  user-select: none;
+}
+
+.swiper-pagination-bullet {
   background-color: white;
   width: 0.6rem;
   height: 0.6rem;
+  transition: 0.3ms;
 }
