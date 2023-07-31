@@ -6,19 +6,30 @@
   .swiper-slide * {
     width: 100% !important;
     height: 100% !important;
+    object-fit: cover !important;
     background-size: cover !important;
     background-repeat: no-repeat !important;
   }
-}
-
-.swiper {
-  &-next,
-  &-prev {
-    cursor: pointer !important;
+  .swiper {
+    &-next,
+    &-prev {
+      cursor: pointer !important;
+      top: 50% !important;
+      transform: translateY(-50%) !important;
+      z-index: 900 !important;
+    }
+    &-next {
+      right: 1.3rem !important;
+      left: unset !important;
+    }
+    &-prev {
+      left: 1.3rem !important;
+      right: unset !important;
+    }
   }
 }
 
-.swiper-pagination-bullet {
+.swiper-pagination-bullet{
   background-color: white;
   width: 0.6rem;
   height: 0.6rem;
