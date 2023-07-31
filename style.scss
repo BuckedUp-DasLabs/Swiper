@@ -21,15 +21,21 @@
     &-next {
       right: 1.3rem !important;
       left: unset !important;
+      @media (max-width: 762px) {
+        right: 0.5rem !important;
+      }
     }
     &-prev {
       left: 1.3rem !important;
       right: unset !important;
+      @media (max-width: 762px) {
+        left: 0.5rem !important;
+      }
     }
   }
 }
 
-.swiper-pagination-bullet{
+.swiper-pagination-bullet {
   background-color: white;
   width: 0.6rem;
   height: 0.6rem;
