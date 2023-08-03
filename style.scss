@@ -35,6 +35,10 @@
   }
 }
 
+.swiper:not(.banner){
+  margin:unset !important
+}
+
 .swiper-pagination-bullet {
   background-color: white;
   width: 0.6rem;
